@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dólar en Venezuela | Precio Oficial y Paralelo Hoy</title>
+    
+    <!-- Meta descripción -->
+    <meta name="description" content="Calculadora de dólar en Venezuela. Convierte bolívares a dólares con precios actualizados del dólar oficial y paralelo. Cotizaciones en tiempo real.">
+    
+    <!-- Meta keywords -->
+    <meta name="keywords" content="dólar hoy, dólar bcv, dólar oficial, dólar paralelo, monitor dólar paralelo, precio del dólar hoy en venezuela 2026, monitor dólar venezuela, precio dólar venezuela, cuanto esta el dólar, precio dólar hoy, dólar venezuela, calculadora dólar, precio dólar oficial, dólar paralelo, convertir bolívares a dólares, tasa de cambio venezuela">
+    
+    <!-- Open Graph (Facebook/LinkedIn) -->
+    <meta property="og:title" content="Calculadora de Dólar en Venezuela | Precio Oficial y Paralelo Hoy">
+    <meta property="og:description" content="Calculadora de dólar en Venezuela. Convierte bolívares a dólares con precios actualizados del dólar oficial y paralelo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dolarapi-venezuela.com">
+    <meta property="og:image" content="https://dolarapi-venezuela.com/og-image.jpg">
+    <meta property="og:locale" content="es_VE">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calculadora de Dólar en Venezuela | Precio Oficial y Paralelo Hoy">
+    <meta name="twitter:description" content="Calculadora de dólar en Venezuela. Convierte bolívares a dólares con precios actualizados.">
+    <meta name="twitter:image" content="https://dolarapi-venezuela.com/twitter-image.jpg">
+    
+    <!-- Meta tags adicionales -->
+    <meta name="author" content="Jeremy24k">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="geo.country" content="VE">
+    <meta name="geo.region" content="VE">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dolarapi-venezuela.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Precios del Dólar en Venezuela | Calculadora de Dólar en Venezuela",
+        "description": "Precios del Dólar en Venezuela | Calculadora para convertir bolívares a dólares usando precios oficiales y paralelos de Venezuela",
+        "url": "https://dolarapi-venezuela.com",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jeremy24k"
+        }
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+            <svg class="modo-dia" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M380-160q133 0 226.5-93.5T700-480q0-133-93.5-226.5T380-800h-21q-10 0-19 2 57 66 88.5 147.5T460-480q0 89-31.5 170.5T340-162q9 2 19 2h21Zm0 80q-53 0-103.5-13.5T180-134q93-54 146.5-146T380-480q0-108-53.5-200T180-826q46-27 96.5-40.5T380-880q83 0 156 31.5T663-763q54 54 85.5 127T780-480q0 83-31.5 156T663-197q-54 54-127 85.5T380-80Zm80-400Z"/></svg>
+            <svg class="modo-noche" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/></svg>
+        </button>
+        
+        <h1>Precios del Dólar en Venezuela</h1>
+        <p class="subtitle">Calculadora de conversión con tasas actualizadas del dólar oficial y paralelo</p>
+    </header>
+    
+    <main>
+        <section class="prices-section">
+            <h2 class="sr-only">Precios actuales del dólar</h2>
+            <div class="values">
+                <article class="value_oficial">
+                    <h3>Dólar Oficial</h3>
+                    <p id="dolar-oficial" aria-label="Precio del dólar oficial en bolívares">Cargando...</p>
+                </article>
+                <article class="value_paralelo">
+                    <h3>Dólar Paralelo</h3>
+                    <p id="dolar-paralelo" aria-label="Precio del dólar paralelo en bolívares">Cargando...</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="calculators-section">
+            <h2 class="sr-only">Calculadoras de conversión</h2>
+            <div class="tabs">
+                <div class="ctn_tabs" role="tablist">
+                    <button id="tab-oficial" class="active" role="tab" aria-selected="true" aria-controls="oficial" tabindex="0">Calculadora Oficial</button>
+                    <button id="tab-paralelo" role="tab" aria-selected="false" aria-controls="paralelo" tabindex="-1">Calculadora Paralelo</button>
+                </div>
+
+                <!-- paralelo -->
+                <div class="calculadora" id="paralelo" role="tabpanel" aria-labelledby="tab-paralelo" hidden>
+                    <h3>Calculadora Dólar Paralelo</h3>
+
+                    <div class="ctn_calculo">
+                        <div class="ctn_input">
+                            <label for="cantidad-bolivares-paralelo" class="label">Bolívares a dólares</label>
+                            <input type="number" id="cantidad-bolivares-paralelo" min="0" step="0.01" aria-label="Cantidad en bolívares venezolanos">
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" aria-hidden="true"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                        <div class="ctn_resultado">
+                            <label class="label">Resultado en dólares</label>
+                            <p class="result" id="resultado-bolivares-paralelo" aria-live="polite" aria-label="Resultado en dólares"></p>
+                        </div>
+                    </div>
+
+                    <div class="ctn_calculo">
+                        <div class="ctn_input">
+                            <label for="cantidad-dolares-paralelo" class="label">Dólares a bolívares</label>
+                            <input type="number" id="cantidad-dolares-paralelo" min="0" step="0.01" aria-label="Cantidad en dólares estadounidenses">
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" aria-hidden="true"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                        <div class="ctn_resultado">
+                            <label class="label">Resultado en bolívares</label>
+                            <p class="result" id="resultado-dolares-paralelo" aria-live="polite" aria-label="Resultado en bolívares"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- oficial -->
+                <div class="calculadora" id="oficial" role="tabpanel" aria-labelledby="tab-oficial">
+                    <h3>Calculadora Dólar Oficial</h3>
+
+                    <div class="ctn_calculo">
+                        <div class="ctn_input">
+                            <label for="cantidad-bolivares-oficial" class="label">Bolívares a dólares</label>
+                            <input type="number" id="cantidad-bolivares-oficial" min="0" step="0.01" aria-label="Cantidad en bolívares venezolanos">
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" aria-hidden="true"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                        <div class="ctn_resultado">
+                            <label class="label">Resultado en dólares</label>
+                            <p class="result" id="resultado-bolivares-oficial" aria-live="polite" aria-label="Resultado en dólares"></p>
+                        </div>
+                    </div>
+
+                    <div class="ctn_calculo">
+                        <div class="ctn_input">
+                            <label for="cantidad-dolares-oficial" class="label">Dólares a bolívares</label>
+                            <input type="number" id="cantidad-dolares-oficial" min="0" step="0.01" aria-label="Cantidad en dólares estadounidenses">
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" aria-hidden="true"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                        <div class="ctn_resultado">
+                            <label class="label">Resultado en bolívares</label>
+                            <p class="result" id="resultado-dolares-oficial" aria-live="polite" aria-label="Resultado en bolívares"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho con ❤️ por <a href="https://github.com/jeremy24k">Jeremy24k</a></p>
+        <p class="api-credit">
+            Datos proporcionados por <a href="https://dolarapi.com" target="_blank">DolarApi.com</a>
+        </p>
+        <div class="tooltip-container">
+            <p>© 2025 DolarApi. Todos los derechos reservados.</p>
+           
+            <span class="tooltip-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                <div class="tooltip-content">
+                    <strong>Aviso Legal:</strong> Este servicio es exclusivamente informativo. 
+                    Los datos proporcionados son meramente referenciales y pueden no reflejar las cotizaciones reales. 
+                    No nos hacemos responsables por el uso de la información o posibles daños derivados.
+                </div>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
