@@ -476,7 +476,7 @@ h1 {
 @media (max-width: 480px) {
     .tabs .ctn_tabs button {
         padding: calc(0.5 * var(--spacing-unit)) 0;
-        font-size: 12px;
+        font-size: 13px;
         min-height: 50px;
     }
 
