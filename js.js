@@ -8,7 +8,7 @@ async function getDolar() {
         document.getElementById('dolar-oficial').textContent = 'Cargando...';
         document.getElementById('dolar-paralelo').textContent = 'Cargando...';
 
-        const response = await fetch('http://localhost:3000/api/dolares');
+        const response = await fetch('https://ve.dolarapi.com/v1/dolares');
         const data = await response.json();
         
         dolar = data;
